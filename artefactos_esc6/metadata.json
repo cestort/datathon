@@ -1,0 +1,39 @@
+{
+  "created_at": "2025-09-14T10:41:29.382883",
+  "scenario": "Esc6_Sincategoricas",
+  "model": "XGBoost",
+  "params": {
+    "objective": "reg:squarederror",
+    "eta": 0.04,
+    "max_depth": 5,
+    "min_child_weight": 3,
+    "subsample": 0.8,
+    "colsample_bytree": 0.9,
+    "lambda": 1.0,
+    "alpha": 0.0,
+    "gamma": 0.0,
+    "eval_metric": "rmse",
+    "seed": 42,
+    "tree_method": "hist"
+  },
+  "best_iteration": 408,
+  "cols_train": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6",
+    "x7",
+    "x8",
+    "x10",
+    "x6_div_x7",
+    "x6_minus_x7",
+    "x8_log1p"
+  ],
+  "metrics_test": {
+    "RMSE": 8.640743170958155,
+    "MAE": 5.881841135062901,
+    "R2": 0.727426031755662
+  }
+}
